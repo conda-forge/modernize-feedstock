@@ -12,6 +12,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   entry_points:
     - python-modernize = libmodernize.main:main
 
