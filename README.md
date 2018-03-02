@@ -14,9 +14,7 @@ Summary: A hack on top of 2to3 for modernizing code for hybrid codebases.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/modernize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/modernize-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/modernize-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/modernize-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/modernize-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/modernize-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/modernize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/modernize-feedstock)
 
 Current release info
 ====================
