@@ -1,7 +1,7 @@
 {% set name = "modernize" %}
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 {% set hash_type = "sha256" %}
-{% set hash = "358dbb35baec7619d9b7cd5efed532c9f4a2e4e4a80f70c4d03f7aa30f76905d" %}
+{% set hash = "e26c32c1bbf0f686f8c803691d8ffb4ddaaee1e60aa9bdf97257d80f2a5e4d29" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -12,6 +12,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   entry_points:
     - python-modernize = libmodernize.main:main
 
