@@ -1,7 +1,7 @@
 {% set name = "modernize" %}
-{% set version = "0.6" %}
+{% set version = "0.6.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "e26c32c1bbf0f686f8c803691d8ffb4ddaaee1e60aa9bdf97257d80f2a5e4d29" %}
+{% set hash = "63dad17ada68105ec18d6c3ae5eaba0b37a412aa3442e1e3d64e088bb8d93dc7" %}
 package:
   name: {{ name }}
   version: {{ version }}
