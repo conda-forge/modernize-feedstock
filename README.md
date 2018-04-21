@@ -14,12 +14,15 @@ Summary: A hack on top of 2to3 for modernizing code for hybrid codebases.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/modernize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/modernize-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/modernize-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/modernize-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/modernize/badges/version.svg)](https://anaconda.org/conda-forge/modernize)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/modernize/badges/downloads.svg)](https://anaconda.org/conda-forge/modernize)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-modernize-green.svg)](https://anaconda.org/conda-forge/modernize) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/modernize.svg)](https://anaconda.org/conda-forge/modernize) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/modernize.svg)](https://anaconda.org/conda-forge/modernize) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/modernize.svg)](https://anaconda.org/conda-forge/modernize) |
 
 Installing modernize
 ====================
