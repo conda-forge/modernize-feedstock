@@ -1,7 +1,6 @@
 {% set name = "modernize" %}
-{% set version = "0.7" %}
-{% set hash_type = "sha256" %}
-{% set hash = "d4f6a3555b1621281ee013d830337c72c133c6318efaac6fc24fe6afa0cc1ab6" %}
+{% set version = "0.8.0" %}
+{% set hash = "1672b4bb19a060a53dd0518cc8f70fc83591c7246e532223459f85d338c60f55" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -42,7 +41,7 @@ about:
   license_family: BSD
   dev_url: https://github.com/python-modernize/python-modernize
   doc_url: http://python-modernize.readthedocs.io/
-  summary: 'A hack on top of 2to3 for modernizing code for hybrid codebases.'
+  summary: A hack on top of 2to3 for modernizing code for hybrid codebases.
 
 extra:
   recipe-maintainers:
