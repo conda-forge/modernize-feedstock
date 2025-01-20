@@ -7,7 +7,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
@@ -15,19 +15,22 @@ build:
   entry_points:
     - python-modernize = libmodernize.main:main
 
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
+    - pip
     - setuptools
 
   run:
     - fissix
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - libmodernize
     - libmodernize.fixes
@@ -37,7 +40,7 @@ test:
 
 about:
   home: https://github.com/python-modernize/python-modernize
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
   dev_url: https://github.com/python-modernize/python-modernize
