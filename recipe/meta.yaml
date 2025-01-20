@@ -16,11 +16,12 @@ build:
     - python-modernize = libmodernize.main:main
 
   number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python {{ python_min }}
+    - pip
     - setuptools
 
   run:
@@ -39,7 +40,7 @@ test:
 
 about:
   home: https://github.com/python-modernize/python-modernize
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
   dev_url: https://github.com/python-modernize/python-modernize
